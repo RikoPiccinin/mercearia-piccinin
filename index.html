@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stilo.css" media="screen">
+    <title>Mercearia</title>
+</head>
+
+<body>
+    <img src="img.png">
+    <div class="container" id="dados"> 
+        <h2> Mercearia Piccinin</h2>
+        <div>
+            <p>
+                Produto: <input type="text" id="inProduto">
+            </p>
+            <p>
+                Valor: <input type="text" id="inValor">
+            </p>
+            <p>
+                Quantidade: <input type="text" id="inQuantidade" >
+            </p>
+
+            <p>
+                <input type="button" id="btnCupon" class="btnCupom" value="Cupon Fiscal">
+            </p>
+        </div>
+    </div>
+    <table>
+        <tr id="dados2"> 
+            <ol id="outProduto"></ol>
+            <ol id="outValor"></ol>
+            <ol id="outQuantidade"></ol>
+            <ol id="outTotal"></ol>
+        </tr>
+    </table>
+    <br>
+    <input class="btn-imprimir" type="button" onclick="imprimir()" value="IMPRIMIR" >
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
